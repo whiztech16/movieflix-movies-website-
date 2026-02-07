@@ -94,12 +94,16 @@ const App = () => {
             onClick={() => setSelectedMovie(null)}
           >
             {/* Desktop X: Only visible on md screens and up */}
-            <button 
-              className="absolute right-10 top-10 z-[110] hidden md:flex h-12 w-12 items-center justify-center rounded-full bg-white/10 text-2xl text-white backdrop-blur-lg border border-white/20 hover:bg-white/20 transition-all"
-              onClick={() => setSelectedMovie(null)}
-            >
-              ✕
-            </button>
+           {/* High-visibility Floating X Button */}
+<button 
+  className="absolute right-6 top-6 z-[120] flex h-12 w-12 items-center justify-center rounded-full bg-white/20 text-2xl text-white backdrop-blur-lg border border-white/30 active:scale-90 transition-all touch-none"
+  onClick={(e) => {
+    e.stopPropagation(); // Prevents the click from "falling through" to elements behind it
+    setSelectedMovie(null);
+  }}
+>
+  ✕
+</button>
             
             <div 
               className="relative h-full w-full max-w-4xl overflow-y-auto bg-[#0f0d23] shadow-2xl md:h-auto md:max-h-[90vh] md:rounded-3xl border-t md:border border-white/10" 
