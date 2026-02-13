@@ -4,10 +4,10 @@ MovieHub is a modern, responsive web application that helps you discover, search
 
 ## 📷 Screenshots
 
-![MovieHub Homepage](screenshots/homepage.png)
+![MovieHub Screenshot](screenshots/moviehub%20screenshot.png)
 *Browse trending movies and search for your favorites*
 
-![Movie Details](screenshots/movie-details.png)
+![MovieHub Info Section](screenshots/moviehub%20info%20section.png)
 *Comprehensive movie details with ratings and overview*
 
 ## ✨ Features
